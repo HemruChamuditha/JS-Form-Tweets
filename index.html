@@ -24,10 +24,37 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Mini-Project Starter</title>
+    <title>Tweets</title>
   </head>
   <body>
-    <h1>Mini-Project Starter</h1>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-7">
+          <h1 class="mb-5 text-center fw-light">Adding Username & Tweets</h1>
+          <form class="tweet-form">
+            <div class="mb-3">
+              <label for="username" class="form-label">User Name</label>
+              <input
+                type="text"
+                class="form-control tweet-username"
+                id="username"
+                name="tweet-username"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="tweet" class="form-label">Tweet</label>
+              <input type="text" class="form-control" id="tweet" name="user-tweet" />
+            </div>
+            <button type="submit" class="btn btn-info px-4">Submit</button>
+          </form>
+
+          <div class="h5 mt-5 fw-semibold">Tweets Section</div>
+          <ul class="list-group mt-5 tweets-list">
+            <li class="list-group-item tweet-list-item">An item</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!--Bootstrap Js-->
     <script src="js/bootstrap.bundle.min.js"></script>
