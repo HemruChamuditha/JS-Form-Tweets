@@ -34,12 +34,14 @@
           <h1 class="mb-5 text-center fw-light">Adding Username & Tweets</h1>
 
           <form action="/cat.html">
-            <input type="text" class="form-control mb-3" name="username" placeholder="user name" />
-            <input type="text" class="form-control mb-3" name="tweet" placeholder="tweet" />
-            <button class="btn btn-info px-4">Submit</button>
+            <label for="username" class="form-label">User Name</label>
+            <input type="text" class="form-control mb-3" name="username" id="username" placeholder="user name" />
+            <label for="tweet" class="form-label">Your Tweet</label>
+            <input type="text" class="form-control mb-4" name="tweet" id="tweet" placeholder="tweet" />
+            <button class="btn btn-primary px-4">Submit</button>
           </form>
 
-          <div class="h5 mt-4 fw-semibold">Tweets Section</div>
+          <div class="h5 mt-5 fw-semibold">Tweets Section</div>
           <ul class="list-group mt-3 tweets-list">
             <li class="list-group-item tweet-list-item">An item</li>
           </ul>
